@@ -28,22 +28,34 @@
         border: 1px solid #4A7C59;
       }
       .qgis {
-        font-size: 12px;
+        background-image: url(/imagens/qgis.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .arqgis {
-        font-size: 13px;
+        background-image: url(/imagens/esri.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .python {
-        font-size: 14px;
+        background-image: url(/imagens/python.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .git {
-        font-size: 15px;
+        background-image: url(/imagens/git.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .matlab {
-        font-size: 16px;
+        background-image: url(/imagens/matlab.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .ingles {
-        font-size: 17px;
+        background-image: url(/imagens/ingles.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
       }
       .footer {
         background-color: #4A7C59;
@@ -57,21 +69,50 @@
       a:link, a:visited, a:hover, a:active {
         text-decoration: none;
       }
+      .bloco1 {
+        display: flex;
+        flex-direction: row;
+      }
+      .bloco2 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .skills-list {
+        list-style-type: none;
+        font-size: 16px;
+      }
+      .skills-list li::before{
+        content: '';
+        display: inline-block;
+      
+        width: 15px;
+        margin-right: 15px
+      }
+      .skills-list li {
+        height: 30px;
+      }
     </style>
   </head>
   <body>
     <h1 class="myname">Vinícius Dionysio Alves</h1>
-    <img src="perfil_port.jpg" id="perfil" alt="Foto de vínicius, usando camisa azul marinho de mangas curtas, com um muro vivo de fundo." width="200px">
-    <ol class="summary">
-      <li><a href="#res">Resumo</a></li>
-      <li><a href="#hab">Habilidades</a></li>
-      <li><a href="#hobb">Hobbies</a></li>
-    </ol>
+    <div class="bloco1">
+      <img src="/imagens/perfil_port.jpg" id="perfil" alt="Foto de vínicius, usando camisa azul marinho de mangas curtas, com um muro vivo de fundo." width="200px">
+      <ol class="summary">
+        <li><a href="#res">Resumo</a></li>
+        <li><a href="#hab">Habilidades</a></li>
+        <li><a href="#hobb">Hobbies</a></li>
+      </ol>
+    </div>
     <hr>
-    <h3 id="res">Resumo</h3>
-    <p class="resumo"> Sou estudante de <b>Desenvolvimento de Software</b> na <b>Trybe</b>, muito animado para aprender Back-end. Também sou graduando em Oceanologia na Universidade Federal do Rio Grande - FURG, onde sou bolsista de iniciação científica num projeto de aplicação do sensoriamento remoto de alta resolução no estudo da vegetação aquática submersa.</p>
-    <p class="living"> Sou natural de Botucatu/SP, mas atualmente moro em Rio Grande/RS.</p>
-    <hr>
+    <div class="bloco2">
+      <h3 id="res">Resumo</h3>
+      <p class="resumo"> Sou estudante de <b>Desenvolvimento de Software</b> na <b>Trybe</b>, muito animado para aprender Back-end. Também sou graduando em Oceanologia na Universidade Federal do Rio Grande - FURG, onde sou bolsista de iniciação científica num projeto de aplicação do sensoriamento remoto de alta resolução no estudo da vegetação aquática submersa.</p>
+      <p class="living"> Sou natural de Botucatu/SP, mas atualmente moro em Rio Grande/RS.</p>
+    </div>
+      <hr>
     <h3 id="hab">Habilidades</h3>
     <ul class="skills-list">
       <li class="qgis">QGIS</li>
