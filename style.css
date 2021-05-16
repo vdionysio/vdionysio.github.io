@@ -19,6 +19,7 @@ body {
   top: 0;
   width: 100%;
   font-family: 'Hammersmith One', sans-serif;
+  z-index: 5;
 }
 
 .navbar a {
@@ -110,6 +111,7 @@ body {
   left: 30%;
   right: 30%;
   line-height: 30px;
+  z-index: 1;
 }
 
 .skills-list li::before {
