@@ -4,128 +4,70 @@
     <meta charset="UTF-8">
     <title>Portfólio - Vinícius Dionysio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Questrial&display=swap" rel="stylesheet">
-    <style>
-      .myname, .summary, h3, .footer {
-        font-family: 'Comfortaa', cursive;
-      }
-      h3 {
-        font-size: 28px;
-      }
-      .resumo, .skills-list, .hobbies-text, .living {
-        font-family: 'Questrial', sans-serif;
-        font-size: 16px;
-      }
-      .living {
-        font-weight: 600;
-      }
-      body {
-        background-color: #C8D5B9;
-        padding-bottom: 25px;
-      }
-      hr {
-        border: 1px solid #4A7C59;
-      }
-      .qgis {
-        background-image: url(/imagens/qgis.svg);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .arqgis {
-        background-image: url(/imagens/esri.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .python {
-        background-image: url(/imagens/python.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .git {
-        background-image: url(/imagens/git.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .matlab {
-        background-image: url(/imagens/matlab.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .ingles {
-        background-image: url(/imagens/ingles.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-      }
-      .footer {
-        background-color: #4A7C59;
-        padding: 15px 20px;
-        border-radius: 10%;
-        color: white;
-      }
-      #perfil {
-        border-radius: 5%;
-      }
-      a:link, a:visited, a:hover, a:active {
-        text-decoration: none;
-      }
-      .bloco1 {
-        display: flex;
-        flex-direction: row;
-      }
-      .bloco2 {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-      }
-      .skills-list {
-        list-style-type: none;
-        font-size: 16px;
-      }
-      .skills-list li::before{
-        content: '';
-        display: inline-block;
-      
-        width: 15px;
-        margin-right: 15px
-      }
-      .skills-list li {
-        height: 30px;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="myname">Vinícius Dionysio Alves</h1>
-    <div class="bloco1">
-      <img src="/imagens/perfil_port.jpg" id="perfil" alt="Foto de vínicius, usando camisa azul marinho de mangas curtas, com um muro vivo de fundo." width="200px">
-      <ol class="summary">
-        <li><a href="#res">Resumo</a></li>
-        <li><a href="#hab">Habilidades</a></li>
-        <li><a href="#hobb">Hobbies</a></li>
-      </ol>
+  
+    <div class="navbar">
+        <a href="#res">Resumo</a>
+        <a href="#hab">Habilidades</a>
+        <a href="#hobb">Hobbies</a>
     </div>
-    <hr>
-    <div class="bloco2">
-      <h3 id="res">Resumo</h3>
-      <p class="resumo"> Sou estudante de <b>Desenvolvimento de Software</b> na <b>Trybe</b>, muito animado para aprender Back-end. Também sou graduando em Oceanologia na Universidade Federal do Rio Grande - FURG, onde sou bolsista de iniciação científica num projeto de aplicação do sensoriamento remoto de alta resolução no estudo da vegetação aquática submersa.</p>
-      <p class="living"> Sou natural de Botucatu/SP, mas atualmente moro em Rio Grande/RS.</p>
+    
+    <div class="main">
+      <h1 class="myname">Vinícius Dionysio Alves</h1>
+    
+      <div class="about">
+        <div class="profile-pic">
+          <a class="anchor" id="perfil"></a>
+          <img src="/imagens/perfil_port.jpg" " alt="Foto de vínicius, usando camisa azul marinho de mangas curtas, com um muro vivo de fundo." width="200px">
+        </div>
+        <div class="description">
+          <h2>Resumo</h2>
+          <a id="res" class="anchor"></a>
+          <p> 
+            Sou estudante de <b>Desenvolvimento de Software</b> na <b>Trybe</b>, muito animado para aprender Back-end. Também sou graduando em Oceanologia na Universidade Federal do Rio Grande - FURG, onde sou bolsista de iniciação científica num projeto de aplicação do sensoriamento remoto de alta resolução no estudo da vegetação aquática submersa.
+          </p>
+          <p class="living"> Sou natural de Botucatu/SP, mas atualmente moro em Rio Grande/RS.</p>
+        </div>
+      </div>
+      
+      <div class="skills">
+        <h2>Habilidades</h2>
+        <a id="hab" class="anchor"></a>
+        
+        <div class="skills-list">
+          <ul>
+            <li>QGIS</li>
+            <li>ArqGIS</li>
+            <li>Básico Python (Numpy, Pandas, Matplotlib)</li>
+            <li>Básico GIT e GitHub</li>
+            <li>Básico MatLab</li>
+            <li>Inglês Intermediário</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="hobbies">
+        <div class="hobbies-content">
+          <h2>Hobbies</h2>
+          <a id="hobb" class="anchor"></a>
+          <p class="hobbies-text">Nos momentos livres gosto de tocar baixo, andar de skate, ouvir música... Um blog que costumo acompanhar é o <a href="https://blackmediaskate.com/" target="_blank">Black Media Skate</a>, que traz um ótimo conteúdo sobre a cena do skate nacional.</p>
+        </div>
+
+        <div class="repos">
+          <div class="git">
+            <a href="https://github.com/vdionysio" target="_blank"><img id="git-logo"src="/imagens/github-icon-white.jpg"></a>
+          </div>
+    
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/vinicius-dionysio-b656b019b/" target="_blank"><img id="linkedin-logo" src="/imagens/linkedin_logo.png"></a>
+          </div>
+        </div>
+      </div>
+      <a class="footer" href="#perfil">Foto perfil</a>
     </div>
-      <hr>
-    <h3 id="hab">Habilidades</h3>
-    <ul class="skills-list">
-      <li class="qgis">QGIS</li>
-      <li class="arqgis">ArqGIS</li>
-      <li class="python">Básico Python (Numpy, Pandas, Matplotlib)</li>
-      <li class="git">Básico GIT e GitHub</li>
-      <li class="matlab">Básico MatLab</li>
-      <li class="ingles">Inglês Intermediário</li>
-    </ul>
-    <hr>
-    <h3 id="hobb">Hobbies</h3>
-    <p class="hobbies-text">Nos momentos livres gosto de tocar baixo e andar de skate. Um blog que costumo acompanhar é o <a href="https://blackmediaskate.com/" target="_blank">Black Media Skate</a>, que traz um ótimo conteúdo sobre a cena do skate nacional.</p>
-    <br><br><br>
-    <a class="footer" href="#perfil">Foto perfil</a>
   </body>
 </html>
